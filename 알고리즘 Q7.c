@@ -1,0 +1,28 @@
+/* 1, 2, …, n의 합을 구합니다(for문). */
+#include <stdio.h>
+
+int main(void)
+{
+	int i, n;
+	int sum;					/* 합 */
+	puts("1부터 n까지의 합을 구합니다.");
+	printf("n 값 : ");
+	scanf_s("%d", &n);
+
+	sum = 0;
+
+	for (i = 1; i <= n; i++){
+
+		if (i == n)
+			printf("%d", n);
+		else
+			printf("%d + ", i);
+
+		sum += i;
+			
+	}
+	printf(" =%d", sum);
+	
+
+	return 0;
+}
